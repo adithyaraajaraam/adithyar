@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="Adithya.R.css" />
+  <link rel="stylesheet" href="static/css/Adithya.R.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet" />
@@ -18,13 +18,25 @@
 </head>
 
 <body>
-
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ced77ddf-bcec-4c42-9288-7b3627370070", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "e5ada103-ff26-4155-9a22-6cd24e8a71e0", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
   <main class="main-content">
     <section class="left-section">
       <div class="left-content">
         <div class="profile">
           <div class="image">
-            <img src="Adithya.R.png" alt="" />
+            <img src="static/img/Adithya.R.png" alt="" />
           </div>
           <h2 class="name">Adithya.R</h2>
           <p class="career">Computer Science</p>
@@ -239,7 +251,7 @@
         <section class="about sect">
           <h2 class="right1-title">About Me</h2>
           <p class="para">
-            <mark>I am a talented, ambitious and hardworking individual, with broad skills and Currently studing in 3rd year CSE.
+            <mark>I am a talented, ambitious and hardworking individual, with broad skills and Currently studing in Final year CSE.
               <br>
               I am at ease in multitasking while staying focused, being used to work well under pressure.<br> 
               My strengths are communication; building strong relationships with people in order to deliver the best results.</mark>
@@ -258,7 +270,7 @@
             </div>
             <div class="left-tl-content">
               <h5 class="tl-title">Representative</h5>
-              <p class="para">April 2022</p>
+              <p class="para">August 2019-July 2023</p>
             </div>
             <div class="right-tl-content">
               <div class="tl-content">
@@ -316,7 +328,7 @@
             <div class="right-tl-content">
               <div class="tl-content">
                 <h5 class="tl-title-2">Computer Science Engineering</h5>
-                <p class="para">Cgpa:8.92</p>
+                <p class="para">Cgpa:8.75</p>
               </div>
             </div>
           </div>
